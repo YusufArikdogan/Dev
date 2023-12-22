@@ -1,0 +1,14 @@
+.button-component {
+  width: 70% !important;
+  display: flex;
+  justify-content: flex-end;
+
+  .dynamic-button {
+    &.auto-wide {
+      @media screen and (max-width: 768px) {
+        width: 100% !important;
+      }
+    }
+  }
+
+}

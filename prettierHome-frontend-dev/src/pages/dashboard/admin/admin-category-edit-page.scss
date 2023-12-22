@@ -1,0 +1,73 @@
+@use "../../../styles/variables" as v;
+
+.category-edit-page-row1{
+
+    .col-bir{
+
+
+     
+      // flex-direction: column;
+
+
+        .col-bir-form{
+          width: 100%;
+          display: flex!important;
+          justify-content: center!important;
+          align-items: center!important;
+          flex-direction: column!important;
+        
+
+            .button-component{
+                
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin-left: 100px;
+
+            }
+
+
+        }
+
+    }
+
+
+}
+.category-edit-page-row2{
+  
+
+    new-edit-fielset{
+        width: 100%;
+    }
+
+    .p-fieldset {
+        border-top: 1px solid v.$color4;
+        width: 90%;
+        position: relative;
+        padding: 3px !important;
+        border-radius: 0;
+        text-align: center;
+        margin-left: 50px;
+    
+        .p-fieldset-toggleable {
+          padding: 3px !important;
+        }
+      
+        .p-fieldset-legend {
+          font-size: 1rem;
+          width: 150px;
+          margin-left: 100px;
+          position: absolute;
+          top: -12px;
+          left: 0;
+          padding: 3px !important;
+          border: 1px solid v.$color4;
+          background-color: white;
+        }
+        .p-fieldset-legend a {
+          padding: 0;
+        }
+      }
+
+
+}

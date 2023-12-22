@@ -1,0 +1,50 @@
+@use "../../styles/variables" as v;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 14px;
+
+  label {
+    margin-bottom: 10px;
+    font-weight: 300;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      border: none;
+      border-radius: 8px;
+      background-color: #E2E1E1;
+    }
+
+    textarea {
+      padding: 10px;
+    }
+  }
+  button {
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 10px;
+    background-color: v.$color4;
+    color: v.$color2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: v.$color1;
+      color: v.$color2;
+    }
+  
+    .recaptcha {
+      width: 500px !important;
+    }
+  }
+}
+
+ 

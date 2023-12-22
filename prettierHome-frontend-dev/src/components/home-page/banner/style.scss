@@ -1,0 +1,53 @@
+@use "/src/styles/variables" as v;
+
+.edit {
+  background-image: url("../../../../public/images/background.png");
+  padding: 80px;
+  border-radius: 20px;
+
+  .box {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  .up-side {
+    :first-child {
+      border-radius: 12px 0 0 0;
+      border-width: 2px 0px 0px 2px !important;
+      border-color: rgb(215, 215, 215) !important;
+      border-style: solid !important;
+      border-right: 2px solid rgb(225, 225, 225) !important;
+    }
+    :last-child {
+      border-radius: 0 12px 0 0;
+      border-width: 2px 2px 0px 0px !important;
+      border-color: rgb(215, 215, 215) !important;
+      border-style: solid !important;
+    }
+  }
+
+  .bottom-side {
+    border-radius: 0 12px 12px 12px !important;
+    border: 2px solid rgb(215, 215, 215) !important;
+
+    input {
+      background-color: v.$color6;
+    }
+
+    button {
+      padding: 5px;
+    }
+  }
+
+  .radio-box {
+    display: flex;
+    gap: 2px;
+
+    input {
+      background-color: v.$color6;
+    }
+  }
+}

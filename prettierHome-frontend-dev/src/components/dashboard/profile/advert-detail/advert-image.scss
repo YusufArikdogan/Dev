@@ -1,0 +1,59 @@
+@use "../../../../styles/variables" as v;
+
+.images-container {
+  background-color: v.$color5-light;
+  border-radius: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+  box-shadow: 0 0 3px v.$color5;
+  display: flex;
+  justify-content: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  .item-template-image {
+    width: 700px !important;
+    height: 450px !important;
+    min-width: 300px!important;
+    
+   
+ 
+   @media screen and (max-width: 650px) {
+    width:600px ;
+    height: 400px !important;
+  }
+   @media screen and (max-width: 600px) {
+    width:550px ;
+    height: 350px !important;
+  }
+    @media screen and (max-width: 550px) {
+      width:500px ;
+      height: 300px !important;
+    }
+    @media screen and (max-width: 450px) {
+      width:450px ;
+      height: 250px !important;
+    }
+  }
+  .thumbnail-image {
+    width: 130px !important;
+    height: 90px;
+    
+
+  }
+  .p-galleria-thumbnail-item{
+    background-color: v.$color5-light;
+  }
+
+  .galleria {
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 95% !important;
+    padding: 20px;
+    max-height: 580px;
+    background-color: v.$color5-light;
+  }
+}

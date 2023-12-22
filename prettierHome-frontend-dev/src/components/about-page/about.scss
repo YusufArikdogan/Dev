@@ -1,0 +1,26 @@
+@use "../../styles/variables" as v;
+.about{
+.img{
+   
+    border-radius:  15px 0 0 15px ;
+    -webkit-border-radius:  15px 0 0 15px ;
+    -moz-border-radius:  15px 0 0 15px ;
+    -ms-border-radius:  15px 0 0 15px ;
+    -o-border-radius:  15px 0 0 15px ;
+}
+  
+div[class^="col"]{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 450;
+    line-height: 20px;
+   
+
+    
+}
+
+
+}

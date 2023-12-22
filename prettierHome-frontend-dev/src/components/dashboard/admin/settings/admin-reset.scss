@@ -1,0 +1,39 @@
+@use "../../../../styles/variables" as v;
+
+.admin-reset-container {
+  width: 70%!important;
+  padding: 50px !important;
+  position: relative;
+  background-color: v.$color5-light;
+  .admin-reset-title-row {
+    width: 100%;
+    display: block;
+   
+    
+
+  }
+  .admin-reset-description-row {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    .span{
+      font-size: large;
+      
+    }
+  }
+  .admin-reset-button-row {
+   position: absolute;
+   bottom: 15px;
+   right: 70px;
+   
+
+    
+    .admin-reset-button {
+      width: 150px;
+      text-align: center;
+   
+    
+      
+    }
+  }
+}

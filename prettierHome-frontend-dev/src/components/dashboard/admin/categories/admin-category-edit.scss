@@ -1,0 +1,21 @@
+@use "../../../../styles/variables" as v;
+
+.category-common {
+    width: 90% !important;
+    // margin: 0 10px 0 10px!important;
+  
+    h5 {
+      font-weight: 600;
+      color: v.$color1;
+      margin-bottom: 20px;
+    }
+
+
+    .iconPiker-col {
+        text-align: center;
+    }
+
+
+
+
+}

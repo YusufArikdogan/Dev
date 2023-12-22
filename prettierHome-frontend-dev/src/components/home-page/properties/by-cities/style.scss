@@ -1,0 +1,21 @@
+@use "/src/styles/variables" as v;
+
+.by-cities-card {
+  color: white !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.by-cities-card,
+.by-cities-card-img {
+  border-radius: 50% !important;
+  width: 148px;
+  height: 148px;
+  object-fit: cover;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.by-cities-card:hover .by-cities-card-img {
+  transform: scale(1.2);
+}

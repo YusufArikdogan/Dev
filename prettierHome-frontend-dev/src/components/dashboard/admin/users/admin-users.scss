@@ -1,0 +1,238 @@
+@use "../../../../styles/variables" as v;
+
+.user-container {
+  .search-div {
+    background-color: v.$color6;
+    width: 86%;
+    margin-left: 50px;
+    .form-control {
+      background-color: v.$color6;
+    }
+  }
+
+  .user-datatable-wrapper {
+    width: 90%;
+    .user-card {
+      border: none;
+      overflow: hidden;
+      .user-datatable {
+        margin-left: 50px;
+      }
+
+      thead tr {
+        font-size: 18px;
+
+        th {
+          background: none;
+          padding-bottom: 10px !important;
+          &:first-child {
+            display: flex;
+            justify-content: start;
+            padding-left: 25px;
+          }
+          &:last-child {
+            display: flex;
+            justify-content: center;
+            padding-left: 70px;
+          }
+
+          &:not(:first-child) {
+            .p-column-header-content {
+              display: flex;
+              justify-content: start;
+              min-width: 100px;
+            }
+          }
+        }
+      }
+
+      tbody tr {
+        &:nth-child(even) {
+          background-color: v.$color10;
+        }
+
+        &:nth-child(odd) {
+          background-color: v.$color12;
+        }
+
+        .p-tag {
+          color: v.$color6;
+          border-radius: 7px;
+          padding: 3px;
+          width: 90px;
+          text-align: center;
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+
+        td {
+          min-width: 100px;
+          border-top: 5px solid white;
+          border-bottom: 5px solid white;
+          padding: 7px;
+          &:first-child {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+
+          &:not(:first-child) {
+            @media screen and (min-width: 768px) {
+              div {
+                display: flex;
+                justify-content: center !important;
+                align-items: center;
+              }
+            }
+          }
+
+          .operationsButton {
+            .btn-link {
+              color: v.$color1;
+              margin-left: 5px;
+              border: 1px solid v.$color1;
+              border-radius: 50px;
+
+              &:hover {
+                background-color: v.$color2;
+                border: 1px solid v.$color2;
+              }
+            }
+
+            svg {
+              font-size: 20px;
+            }
+
+            @media screen and (max-width: 992px) {
+              flex-flow: wrap;
+            }
+          }
+        }
+      }
+
+      .p-paginator {
+        gap: 10px;
+        .p-paginator-current {
+          display: inline-flex;
+
+          @media screen and (min-width: 768px) {
+            display: none !important;
+          }
+        }
+
+        .p-paginator-pages {
+          display: none;
+
+          @media screen and (min-width: 768px) {
+            display: inline-flex;
+          }
+        }
+
+        .p-paginator-current {
+          display: inline-flex;
+        }
+
+        button {
+          margin: 3px;
+          background-color: v.$color8;
+          border-radius: 80%;
+          color: v.$color6;
+
+          &:disabled {
+            background-color: v.$color2;
+
+            &:hover {
+              background-color: v.$color2;
+              color: v.$color6;
+              box-shadow: none;
+            }
+          }
+
+          &:hover {
+            background-color: v.$color4;
+            box-shadow: 0 1px 1px v.$color8;
+            color: v.$color2;
+          }
+
+          &:focus {
+            background-color: v.$color4-light;
+            color: v.$color7;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .user-datatable-wrapper
+    .user-datatable
+    .p-datatable-tbody
+    > tr
+    > td
+    .p-column-title {
+    display: none;
+  }
+
+  .p-toast-icon-close {
+    background: none;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: v.$color2-light;
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .user-datatable-wrapper
+      .p-datatable.user-datatable
+      .p-datatable-thead
+      > tr
+      > th,
+    .user-datatable-wrapper
+      .p-datatable.user-datatable
+      .p-datatable-tfoot
+      > tr
+      > td {
+      display: none !important;
+    }
+
+    .user-datatable-wrapper
+      .p-datatable.user-datatable
+      .p-datatable-tbody
+      > tr
+      > td {
+      text-align: left;
+      display: block;
+      width: 100%;
+      float: left;
+      clear: left;
+      border: 0 none;
+    }
+
+    .user-datatable-wrapper
+      .p-datatable.user-datatable
+      .p-datatable-tbody
+      > tr
+      > td
+      .p-column-title {
+      padding: 0.4rem;
+      min-width: 30%;
+      display: inline-block;
+      margin: -0.4em 1em -0.4em -0.4rem;
+      font-weight: bold;
+    }
+
+    .user-datatable-wrapper
+      .p-datatable.user-datatable
+      .p-datatable-tbody
+      > tr
+      > td:last-child {
+      border-bottom: 1px solid var(--surface-d);
+    }
+  }
+}

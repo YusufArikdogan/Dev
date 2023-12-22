@@ -1,0 +1,40 @@
+@use "../../styles/variables" as v;
+
+.left-side {
+  width: 45%;
+  background-color: v.$color3;
+  border-radius: 15px 0 0 15px;
+  color: v.$color2 !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 80px;
+    border-radius: 15px;
+  }
+
+  .left-side-main {
+    width: 80%;
+  }
+
+  h2 {
+    font-weight: 500;
+    color: v.$color2;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  }
+}
+
+.right-side {
+  width: 55%;
+
+  img {
+    border-radius: 0 15px 15px 0;
+  }
+}

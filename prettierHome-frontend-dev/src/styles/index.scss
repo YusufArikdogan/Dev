@@ -1,0 +1,34 @@
+@use "./variables" as v;
+@import "./variables";
+@import "./primereact-var";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800;900&display=swap");
+
+@import "bootstrap/scss/bootstrap";
+@import "sweetalert2/src/variables";
+@import "sweetalert2/src/sweetalert2";
+
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+* {
+  // font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+// Eğer herhangi bir kayma varsa sağdan veya soldan, aşağıdaki kod bloğu kullanılacak //
+
+// html,
+// body {
+//   overflow-x: hidden;
+// }
